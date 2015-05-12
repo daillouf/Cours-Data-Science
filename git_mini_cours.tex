@@ -29,5 +29,12 @@ Pour copier «cloner» un repository :\\
 Après avoir cloner un repository qui est un fork, en ligne, on peut, en ligne de commande, le «connecter» au dossier forké original : \\
 \verb!git remote add upstream URL_REPO_ORIGINAL!\\
 
-
+\section{Mettre son dossier en ligne}
+Avec le bash de git, on se place dans le dossier visé :\\
+\verb!git init! — Créer le repo local\\
+\verb!git add .! — Ajouter tous les fichiers dans l'index\\
+\verb!git commit -m 'Message'! —  Soumettre l'avancement\\
+\verb!git remote add origin URL! —  lier votre repo local à un repo github\\
+\verb!git push -u origin master! ou \verb!git push! pour les intimes.\\
+ 
 \end{document}
