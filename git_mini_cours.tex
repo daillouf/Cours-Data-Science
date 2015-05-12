@@ -36,5 +36,12 @@ Avec le bash de git, on se place dans le dossier visé :\\
 \verb!git commit -m 'Message'! —  Soumettre l'avancement\\
 \verb!git remote add origin URL! —  lier votre repo local à un repo github\\
 \verb!git push -u origin master! ou \verb!git push! pour les intimes.\\
- 
+ \section{Travailler avec plusieurs branches}
+ Git va cacher et faire apparaître certains fichiers du dossier selon la branche où il se trouve.\\
+\verb!git checkout -b prob53! est un raccourci au deux commandes :\\
+\begin{verbatim}
+$ git branch prob53
+$ git checkout prob53
+\end{verbatim}
+
 \end{document}
