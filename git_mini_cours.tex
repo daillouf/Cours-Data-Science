@@ -1,0 +1,33 @@
+\documentclass{article}
+\usepackage[french]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{graphicx}
+\graphicspath{{image/}}
+\begin{document}
+\title{Git}
+
+\author{François}
+\maketitle
+
+Git is local, github est sur le net.\\
+\verb!git add -u! va mettre à jour l'index des fichiers qui ont changé de nom où qui ont été supprimés \\
+\verb!git commit -m «message»! pour mettre à jour le repo local \\
+Pour créer une branche, taper \\
+\verb!git checkout -b branchname!\\
+Pour voir sur quelle branche :\\
+\verb!git branch!\\
+Pour changer de branche :\\
+\verb!git checkout master! qui va repasser sur la branche \verb!master! dans ce cas.\\
+\\
+Pour connecter un repository à un repository en ligne :\\
+\verb!git remote add origin https://github.com/daillouf/RSAmacro!\\
+
+Pour copier «cloner» un repository :\\
+\verb!git clone URL!
+
+Après avoir cloner un repository qui est un fork, en ligne, on peut, en ligne de commande, le «connecter» au dossier forké original : \\
+\verb!git remote add upstream URL_REPO_ORIGINAL!\\
+
+
+\end{document}
